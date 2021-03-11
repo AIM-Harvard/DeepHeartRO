@@ -39,41 +39,6 @@ The second step of the pipeline, responsible for the heart segmentation, produce
 * `model_output_nrrd`
 * `model_output_metrics`
 
-#### CAC Segmentation (Step 3)
-
-The third step of the pipeline, responsible for the CAC segmentation, produces by default the following outputs:
-
-* `cropped`;
-* `cropped_qc`
-* `dilated`
-* `model_output`
-
-#### CAC Scoring (Step 4)
-
-The fourth and last step of the pipeline, responsible for the CAC scoring, produces by default a CSV file `cac_score_results.csv` formatted in the following fashion:
-
-| PatientID | Dice | CAC_calc | CAC_pred | Class_calc | Class_pred |
-|-----------|------|----------|----------|------------|------------|
-|  ABC123   |  -   |     -    |     -    |      -     |      -     |
-
-where:
-
-* `PatientID` identifies each patient using the same name scheme found in `raw`;
-* if a (manual) CAC segmentation mask to compare the results of the pipeline with is provided, the Dice Coefficient for the CAC segmentation is stored under `Dice` (otherwise, the cell is set to -1);
-* if a (manual) CAC segmentation mask is provided, the CAC score computed from such mask is stored under `CAC_calc` (otherwise, the cell is set to -1);
-* the CAC score computed from the inferred segmentation mask is stored under`CAC_pred`;
-* if a (manual) CAC segmentation mask is provided, the CAC class to which the patient belongs, computed from such mask, is stored under `Class_calc`;
-*  the CAC class to which the patient belongs, computed from the inferred segmentation mask, is stored under `Class_pred`.
-
-For instance, after running the DeepCAC pipeline using the provided sample subjects as input, such CSV file should look like:
-
-| PatientID | Dice | CAC_calc | CAC_pred | Class_calc | Class_pred |
-|-----------|------|----------|----------|------------|------------|
-|    0187   |  0   |     0    |     0    |      0     |      0     |
-|    0909   |0.776 | 1260.875 | 811.965  |      3     |      3     |
-|    0987   |0.933 |  127.82  |  138.985 |      2     |      2     |
-|    0506   | 0.77 | 318.395  |  184.8   |      3     |      2     |
-
 
 ## Input Data Format
 
