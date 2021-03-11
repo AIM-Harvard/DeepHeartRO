@@ -1,0 +1,12 @@
+Train One weight file:
+Step 1:
+/mnt/R2-D6_data9/HeartSegmentation_ALLtrain/Train_One/DF_ALL_1_1/4_trainOutput_18/weights/weights-1200--0.95.hdf5
+Step 2:
+/mnt/R2-D6_data9/HeartSegmentation_ALLtrain/Train_One/DF_ALL_1_2/4_trainOutput_af/weights/weights-1000--0.97.hdf5
+
+
+Train Four weight file:
+Step 1:
+/mnt/R2-D6_data4/DeepFat_CT1CT2NLSTPRO/DF_CT1CT2NLST_1_1/4_trainOutput/weights/weights-532--0.95.hdf5
+Step2:
+/mnt/R2-D6_data4/DeepFat_CT1CT2NLSTPRO/DF_CT1CT2NLST_1_2/4_trainOutput/weights/weights-1000--0.96.hdf5
