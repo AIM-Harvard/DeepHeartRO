@@ -2,14 +2,6 @@
 
 Fully automatic heart segmentation network.
 
-If you use code or parts of this code in your work, please cite our 
-publication:  
-*Zeleznik, R., Foldyna, B., Eslami, P. et al. Deep convolutional neural 
-networks to predict cardiovascular risk from computed tomography.
-Nat Commun 12, 715 (2021). https://doi.org/10.1038/s41467-021-20966-2*
-
-
-
 ## Repository Structure
 
 The DeepHeartRO repository is structured as follows:
